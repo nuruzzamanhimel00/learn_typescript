@@ -166,23 +166,24 @@ let myFunc : Function;
 // userDetails(1, {name: 'John', age: 30});
 
 //========= Lesson 9 - Classes - TypeScript Bangla ( বাংলা ) Tutorial Series ===
-class Player{
-    // name: string;
-    // age: number
-    // country: string
-    // constructor(name: string, age: number, country: string) {
-    //     this.name = name;
-    //     this.age = age;
-    //     this.country = country;
-    // }
+// class Player{
+//     // name: string;
+//     // age: number
+//     // country: string
+//     // constructor(name: string, age: number, country: string) {
+//     //     this.name = name;
+//     //     this.age = age;
+//     //     this.country = country;
+//     // }
 
-    constructor(public name: string, public age: number, public country: string) {
-    }
+//     constructor(public name: string, public age: number, public country: string) {
+//     }
 
-    play() {
-        console.log(`${this.name} is playing. Age: ${this.age}, Country: ${this.country}`);
-    }
-}
+//     play() {
+//         console.log(`${this.name} is playing. Age: ${this.age}, Country: ${this.country}`);
+//     }
+// }
+import { Player } from './classes/Player.js';
 const shakib = new Player('Shakib Al Hasan', 35, 'Bangladesh');
 const himel = new Player('Himel', 25, 'Bangladesh');
 
