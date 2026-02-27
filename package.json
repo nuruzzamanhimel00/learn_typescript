@@ -1,0 +1,17 @@
+{
+  "name": "learn_typescript",
+  "type": "module",
+  "scripts": {
+    "build": "node init && esbuild src/script.ts --bundle --outfile=dist/script.js --sourcemap",
+    "watch": "esbuild src/script.ts --bundle --outfile=dist/script.js --sourcemap --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "dotenv": "^8.2.0",
+    "esbuild": "^0.27.3",
+    "node-fetch": "^3.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
