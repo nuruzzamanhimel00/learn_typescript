@@ -126,11 +126,46 @@ let myFunc;
 // console.log(calculation(10, 5, 'multiply'));
 // console.log(calculation(10, 5, 'divide'));
 //====== exp: 3
-let userDetails;
-userDetails = (id, user) => {
-    console.log(`User ID: ${id}`);
-    console.log(`User Name: ${user.name}`);
-    console.log(`User Age: ${user.age}`);
-};
-userDetails(1, { name: 'John', age: 30 });
+// let userDetails : (id:number | string,
+//     user: {
+//         name: string,
+//         age: number,
+//     }
+// ) => void
+// userDetails = (id: number | string, user: {name: string, age: number}) => {
+//     console.log(`User ID: ${id}`);
+//     console.log(`User Name: ${user.name}`);
+//     console.log(`User Age: ${user.age}`);
+// }
+// userDetails(1, {name: 'John', age: 30});
+//========= Lesson 9 - Classes - TypeScript Bangla ( বাংলা ) Tutorial Series ===
+class Player {
+    name;
+    age;
+    country;
+    // name: string;
+    // age: number
+    // country: string
+    // constructor(name: string, age: number, country: string) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.country = country;
+    // }
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
+    play() {
+        console.log(`${this.name} is playing. Age: ${this.age}, Country: ${this.country}`);
+    }
+}
+const shakib = new Player('Shakib Al Hasan', 35, 'Bangladesh');
+const himel = new Player('Himel', 25, 'Bangladesh');
+shakib.play();
+himel.play();
+// const Players :Player[] = [];
+// Players.push(shakib);
+// Players.push(himel);
+// console.log(Players);
 //# sourceMappingURL=script.js.map

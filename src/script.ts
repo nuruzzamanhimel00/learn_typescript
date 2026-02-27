@@ -167,16 +167,29 @@ let myFunc : Function;
 
 //========= Lesson 9 - Classes - TypeScript Bangla ( বাংলা ) Tutorial Series ===
 class Player{
-    name: string;
-    age: number
-    country: string
-    constructor(name: string, age: number, country: string) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
+    // name: string;
+    // age: number
+    // country: string
+    // constructor(name: string, age: number, country: string) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.country = country;
+    // }
+
+    constructor(public name: string, public age: number, public country: string) {
     }
 
     play() {
-        console.log(`${this.name} is playing.`);
+        console.log(`${this.name} is playing. Age: ${this.age}, Country: ${this.country}`);
     }
 }
+const shakib = new Player('Shakib Al Hasan', 35, 'Bangladesh');
+const himel = new Player('Himel', 25, 'Bangladesh');
+
+shakib.play();
+himel.play();
+
+// const Players :Player[] = [];
+// Players.push(shakib);
+// Players.push(himel);
+// console.log(Players);
